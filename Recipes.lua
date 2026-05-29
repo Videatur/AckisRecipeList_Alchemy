@@ -209,7 +209,8 @@ function module:InitializeRecipes()
     recipe:SetSkillLevels(165, 165, 190, 210, 230)
     recipe:SetCraftedItem(3824, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_OIL")
-    recipe:AddTrainer(1386, 2132, 3009, 3184, 3347, 4160, 4900, 5177, 5499, 16588, 16642, 16723, 18802, 56777)
+    recipe:AddVendor(2481, 4878)
+    --recipe:AddTrainer(1386, 2132, 3009, 3184, 3347, 4160, 4900, 5177, 5499, 16588, 16642, 16723, 18802, 56777)
 
     -- Elixir of Fortitude -- 3450
     recipe = AddRecipe(3450, V.ORIG, Q.COMMON)
