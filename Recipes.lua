@@ -828,7 +828,7 @@ function module:InitializeRecipes()
     recipe:AddVendor(11278)
 
     -- Alchemist Stone -- 17632
-    recipe = AddRecipe(17632, V.ORIG, Q.COMMON)
+    recipe = AddRecipe(17632, V.TBC, Q.COMMON)
     recipe:SetSkillLevels(350, 350, 365, 372, 380)
     recipe:SetRecipeItem(13517, "BIND_ON_PICKUP")
     recipe:SetCraftedItem(13503, "BIND_ON_PICKUP")
@@ -843,33 +843,6 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(13506, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
-
-    -- Flask of the Titans -- 17635
-    recipe = AddRecipe(17635, V.ORIG, Q.UNCOMMON)
-    recipe:SetSkillLevels(300, 300, 315, 322, 330)
-    recipe:SetRecipeItem(31354, "BIND_ON_PICKUP")
-    recipe:SetCraftedItem(13510, "BIND_ON_EQUIP")
-    recipe:SetItemFilterType("ALCHEMY_FLASK")
-    recipe:AddRepVendor(FAC.THE_SHATAR, REP.EXALTED, 21432)
-
-    -- Flask of Distilled Wisdom -- 17636
-    recipe = AddRecipe(17636, V.ORIG, Q.UNCOMMON)
-    recipe:SetSkillLevels(300, 300, 315, 322, 330)
-    recipe:SetRecipeItem(31356, "BIND_ON_PICKUP")
-    recipe:SetCraftedItem(13511, "BIND_ON_EQUIP")
-    recipe:SetItemFilterType("ALCHEMY_FLASK")
-    recipe:AddFilters(F.CASTER, F.HEALER)
-    recipe:AddRepVendor(FAC.CENARION_EXPEDITION, REP.EXALTED, 17904)
-    recipe:AddMobDrop(10813)
-
-    -- Flask of Supreme Power -- 17637
-    recipe = AddRecipe(17637, V.ORIG, Q.UNCOMMON)
-    recipe:SetSkillLevels(300, 300, 315, 322, 330)
-    recipe:SetRecipeItem(31355, "BIND_ON_PICKUP")
-    recipe:SetCraftedItem(13512, "BIND_ON_EQUIP")
-    recipe:SetItemFilterType("ALCHEMY_FLASK")
-    recipe:AddFilters(F.CASTER, F.HEALER)
-    recipe:AddRepVendor(FAC.KEEPERS_OF_TIME, REP.EXALTED, 21643)
 
     -- Elixir of Frost Power -- 21923
     recipe = AddRecipe(21923, V.ORIG, Q.COMMON)
@@ -956,6 +929,33 @@ function module:InitializeRecipes()
     -- ----------------------------------------------------------------------------
     -- The Burning Crusade.
     -- ----------------------------------------------------------------------------
+    -- Flask of the Titans -- 17635
+    recipe = AddRecipe(17635, V.TBC, Q.UNCOMMON)
+    recipe:SetSkillLevels(300, 300, 315, 322, 330)
+    recipe:SetRecipeItem(31354, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(13510, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_FLASK")
+    recipe:AddRepVendor(FAC.THE_SHATAR, REP.EXALTED, 21432)
+
+    -- Flask of Distilled Wisdom -- 17636
+    recipe = AddRecipe(17636, V.TBC, Q.UNCOMMON)
+    recipe:SetSkillLevels(300, 300, 315, 322, 330)
+    recipe:SetRecipeItem(31356, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(13511, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_FLASK")
+    recipe:AddFilters(F.CASTER, F.HEALER)
+    recipe:AddRepVendor(FAC.CENARION_EXPEDITION, REP.EXALTED, 17904)
+    recipe:AddMobDrop(10813)
+
+    -- Flask of Supreme Power -- 17637
+    recipe = AddRecipe(17637, V.TBC, Q.UNCOMMON)
+    recipe:SetSkillLevels(300, 300, 315, 322, 330)
+    recipe:SetRecipeItem(31355, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(13512, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_FLASK")
+    recipe:AddFilters(F.CASTER, F.HEALER)
+    recipe:AddRepVendor(FAC.KEEPERS_OF_TIME, REP.EXALTED, 21643)
+
     -- Elixir of Camouflage -- 28543
     recipe = AddRecipe(28543, V.TBC, Q.COMMON)
     recipe:SetSkillLevels(305, 305, 320, 327, 335)
