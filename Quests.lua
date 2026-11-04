@@ -29,35 +29,17 @@ function module:InitializeQuests()
 		})
 	end
 
-	AddQuest(14151,	Z.DALARAN_NORTHREND,			42.5,	32.1,	"Neutral")
-	AddQuest(41657,	Z.AZSUNA,				46.8,	41.1,	"Neutral")
-	AddQuest(41658,	Z.VALSHARAH,				54.6,	73.2,	"Neutral")
-	AddQuest(41659,	Z.THUNDER_TOTEM,			38.4,	46.0,	"Neutral")
-	AddQuest(41661,	Z.SURAMAR,				36.4,	46.8,	"Neutral")
-	AddQuest(41662,	Z.DALARAN_BROKENISLES,			33.4,	47.8,	"Neutral")
-	AddQuest(48002,	Z.KROKUUN,				56.1,	66.8,	"Neutral")
-	AddQuest(48013,	Z.KROKUUN,				56.1,	66.8,	"Neutral")
-	AddQuest(48016,	Z.KROKUUN,				56.1,	66.8,	"Neutral")
-	AddQuest(48318,	Z.KROKUUN,				56.1,	66.8,	"Neutral")
-	AddQuest(48323,	Z.KROKUUN,				56.1,	66.8,	"Neutral")
-	AddQuest(52331,	Z.BORALUS,				73.2,	11.0,	"Alliance") -- World Quest
-	AddQuest(52332,	Z.STORMSONG_VALLEY,			59.2,	69.4,	"Alliance") -- World Quest
-	AddQuest(52333,	Z.BORALUS,				67.6,	21.8,	"Alliance") -- World Quest
-	AddQuest(52334,	Z.DRUSTVAR,				37.8,	49.0,	"Alliance") -- World Quest
-	AddQuest(52335,	Z.DAZARALOR,				44.2,	32.2,	"Horde") -- World Quest
-	AddQuest(52336,	Z.DAZARALOR,				65.6,	72.4,	"Horde") -- World Quest
-	AddQuest(52337,	Z.NAZMIR,				39.0,	79.4,	"Horde") -- World Quest
-	AddQuest(52338,	Z.VOLDUN,				56.6,	49.8,	"Horde") -- World Quest
-	AddQuest(50112,	Z.DAZARALOR,				42.2,	38.0,	"Horde")
-	AddQuest(50121,	Z.BORALUS,				74.2,	6.6,	"Alliance")
-	AddQuest(56570,	Z.NAZJATAR,				38.0,	55.6,	"Alliance") -- World Quest
-	AddQuest(56767,	Z.NAZJATAR,				38.0,	55.6,	"Alliance") -- World Quest
-	AddQuest(56768,	Z.NAZJATAR,				38.0,	55.6,	"Alliance") -- World Quest
-	AddQuest(56769,	Z.NAZJATAR,				38.0,	55.6,	"Alliance") -- World Quest
-	AddQuest(56770,	Z.NAZJATAR,				50.8,	65.2,	"Horde") -- World Quest
-	AddQuest(56772,	Z.NAZJATAR,				50.8,	65.2,	"Horde") -- World Quest
-	AddQuest(56773,	Z.NAZJATAR,				50.8,	65.2,	"Horde") -- World Quest
-	AddQuest(56774,	Z.NAZJATAR,				50.8,	65.2,	"Horde") -- World Quest
+
+	AddQuest(715, Z.BADLANDS, 25.8, 44.6, "Neutral")
+	AddQuest(91920, Z.SILVERPINE_FOREST, 53.4, 12.6, "Horde")
+	AddQuest(92110, Z.WESTFALL, 0, 0, "Alliance")
+	AddQuest(96045, Z.IRONFORGE, 66.6, 55.2, "Alliance")
+	AddQuest(97899, Z.DUROTAR, 52, 47.2, "Horde")
+	AddQuest(97915, Z.ELWYNN_FOREST, 44.8, 63.2, "Alliance")
+	AddQuest(97927, Z.MULGORE, 46.2, 67.2, "Horde")
+	AddQuest(97938, Z.TELDRASSIL, 57.6, 56.6, "Alliance")
+	AddQuest(97951, Z.TIRISFAL_GLADES, 57.2, 55.6, "Horde")
+	AddQuest(97963, Z.ZEPHRAS_ISLE, 41.6, 44.8, "Neutral")
 
 	self.InitializeQuests = nil
 end
