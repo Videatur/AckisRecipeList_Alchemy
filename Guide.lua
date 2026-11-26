@@ -12,24 +12,9 @@ module.Guide = {
 {
 ["from"] = 1,
 ["id"] = "1-10",
-["note"] = "Choose the starting elixir whose herb is easier to obtain. Learn the recipe from an Alchemy trainer.",
+["note"] = "Learn Elixir of Minor Force from an Alchemy trainer and use Silverleaf to reach skill 10.",
 ["to"] = 10,
 ["variants"] = {
-{
-["count"] = 9,
-["materials"] = {
-{
-2447,
-9
-},
-{
-3371,
-9
-}
-},
-["spellID"] = 1245246,
-["title"] = "Minor Arcane Elixir"
-},
 {
 ["count"] = 9,
 ["materials"] = {
@@ -393,24 +378,24 @@ module.Guide = {
 ["steps"] = {
 {
 ["from"] = 225,
-["id"] = "225-230",
-["note"] = "Learn Artisan Alchemy before continuing. Use Nature Protection Potion for approximately five more skill points. The source has not tested this chapter in Forever.",
-["to"] = 230,
+["id"] = "225-235",
+["note"] = "Learn Artisan Alchemy before continuing with Nature Protection Potions.",
+["to"] = 235,
 ["variants"] = {
 {
-["count"] = 12,
+["count"] = 26,
 ["materials"] = {
 {
 3357,
-12
+26
 },
 {
 3372,
-12
+26
 },
 {
 3820,
-12
+26
 }
 },
 ["spellID"] = 7259,
@@ -419,108 +404,104 @@ module.Guide = {
 }
 },
 {
-["from"] = 230,
-["id"] = "230-265",
-["note"] = "Learn Draught of Detect Undead from an Artisan trainer. Skill gains become less reliable from 245; allow additional materials if needed.",
-["to"] = 265,
+["from"] = 235,
+["id"] = "235-250",
+["note"] = "Learn Elixir of Greater Intellect from an Artisan trainer.",
+["to"] = 250,
 ["variants"] = {
 {
-["count"] = 45,
+["count"] = 15,
 ["materials"] = {
 {
-8836,
-45
+3358,
+15
+},
+{
+8839,
+15
 },
 {
 8925,
-45
+15
 }
 },
-["spellID"] = 11460,
-["title"] = "Draught of Detect Undead"
+["spellID"] = 11465,
+["title"] = "Elixir of Greater Intellect"
 }
 }
 },
 {
-["from"] = 265,
-["id"] = "265-275",
-["note"] = "Buy Recipe: Superior Mana Potion from Algernon (Horde) or Ulthir (Alliance). Limited stock may require another visit.",
-["to"] = 275,
+["from"] = 250,
+["id"] = "250-260",
+["note"] = "Each craft makes two Stonescale Oils. Save all 94 for Elixir of Greater Defense. If eels are expensive, you can instead make about 21 Greater Intellect elixirs from 250 to 265 and finish with Superior Mana Potion. The shopping list follows the displayed oil and elixir steps, so adjust it manually for that shortcut.",
+["to"] = 260,
+["variants"] = {
+{
+["count"] = 47,
+["materials"] = {
+{
+3372,
+47
+},
+{
+13422,
+47
+}
+},
+["outputCount"] = 2,
+["outputItemID"] = 13423,
+["spellID"] = 17551,
+["title"] = "Stonescale Oil"
+}
+}
+},
+{
+["from"] = 260,
+["id"] = "260-265",
+["note"] = "Resume Elixir of Greater Intellect until skill 265. Skip this section if you used it to advance directly from 250 to 265.",
+["to"] = 265,
 ["variants"] = {
 {
 ["count"] = 10,
 ["materials"] = {
 {
-8838,
-20
+3358,
+10
 },
 {
 8839,
-20
+10
 },
 {
 8925,
 10
 }
 },
-["recipeItemID"] = 13477,
-["shoppingRequirements"] = {
-{
-13477,
-1
-}
-},
-["spellID"] = 17553,
-["title"] = "Superior Mana Potion"
+["spellID"] = 11465,
+["title"] = "Elixir of Greater Intellect"
 }
 }
 },
 {
-["from"] = 275,
-["id"] = "275-290",
-["note"] = "Compare the full ingredient cost of each option before choosing. Stop at 290. The spell Elixir of Greater Defense uses Recipe: Elixir of Superior Defense; spell 17554 and recipe item 13478 identify the same craft.",
-["to"] = 290,
+["from"] = 265,
+["id"] = "265-300",
+["note"] = "Choose Elixir of Greater Defense if you prepared the oil. If you skipped the oil, choose Superior Mana Potion.",
+["to"] = 300,
 ["variants"] = {
 {
-["count"] = 20,
+["count"] = 47,
 ["materials"] = {
 {
 8838,
-40
-},
-{
-8839,
-40
+47
 },
 {
 8925,
-20
-}
-},
-["recipeItemID"] = 13477,
-["shoppingRequirements"] = {
-{
-13477,
-1
-}
-},
-["spellID"] = 17553,
-["title"] = "Superior Mana Potion"
-},
-{
-["count"] = 17,
-["materials"] = {
-{
-8838,
-17
-},
-{
-8925,
-17
+47
 },
 {
 13423,
-34
+94
 }
 },
 ["note"] = "Buy Recipe: Elixir of Superior Defense from Kor'geld (Horde) or Soolie Berryfizz (Alliance). The resulting elixir is named Greater Defense in Forever.",
@@ -535,62 +516,31 @@ module.Guide = {
 ["title"] = "Elixir of Greater Defense"
 },
 {
-["count"] = 27,
+["count"] = 55,
 ["materials"] = {
 {
-8845,
-81
+8838,
+110
+},
+{
+8839,
+110
 },
 {
 8925,
-27
+55
 }
 },
-["note"] = "Buy Recipe: Elixir of Shadow Power from Algernon (Horde) or Maria Lumere (Alliance).",
-["recipeItemID"] = 9301,
+["note"] = "Buy Recipe: Superior Mana Potion from Algernon (Horde) or Ulthir (Alliance). Limited stock may require another visit.",
+["recipeItemID"] = 13477,
 ["shoppingRequirements"] = {
 {
-9301,
+13477,
 1
 }
 },
-["spellID"] = 11476,
-["title"] = "Elixir of Shadow Power"
-}
-}
-},
-{
-["from"] = 290,
-["id"] = "290-300",
-["note"] = "This route uses Recipe: Major Frenzy Potion. Buy it on the character learning Alchemy: it binds on pickup. The source has not finalized the cheapest last-ten-point route. Other recipes may be viable, but their quantities are not included here.",
-["to"] = 300,
-["variants"] = {
-{
-["count"] = 17,
-["materials"] = {
-{
-8839,
-34
-},
-{
-13466,
-51
-},
-{
-18256,
-17
-}
-},
-["note"] = "Requires Honored with Durotar Supply and Logistics (Horde) or Azeroth Commerce Authority (Alliance), plus 240 Merchant's Favor. Buy the recipe from Apothecary Durelle near the Crossroads or Nina Surefire at Three Corners. Each craft produces two potions; the estimate is 17 crafts, not 17 finished potions.",
-["recipeItemID"] = 250987,
-["shoppingRequirements"] = {
-{
-250987,
-1
-}
-},
-["spellID"] = 1251740,
-["title"] = "Major Frenzy Potion"
+["spellID"] = 17553,
+["title"] = "Superior Mana Potion"
 }
 }
 }
@@ -609,7 +559,7 @@ module.Guide = {
 }
 },
 ["id"] = "forever-alchemy-1-225",
-["introduction"] = "Craft counts are estimates; stop at each target skill. Keep the Fire Oil prepared for later crafts. The source has not tested 225-300 in Forever; confirm recipe access and material costs before buying that chapter. The final step uses the Merchant's Favor recipe.",
+["introduction"] = "Craft counts are estimates; stop at each target skill. Save Fire Oil for the 150-165 elixirs. The default Artisan route prepares Stonescale Oil for Elixir of Greater Defense. Compare material costs before choosing the last step.",
 ["locations"] = {
 [1386] = {
 ["faction"] = "Horde",
@@ -618,22 +568,6 @@ module.Guide = {
 ["x"] = 48.5,
 ["y"] = 55.8,
 ["zone"] = Z["SWAMP_OF_SORROWS"]
-},
-[248196] = {
-["faction"] = "Horde",
-["mapID"] = 1413,
-["name"] = "Apothecary Durelle",
-["x"] = 49.9,
-["y"] = 29.6,
-["zone"] = Z["THE_BARRENS"]
-},
-[256729] = {
-["faction"] = "Alliance",
-["mapID"] = 1433,
-["name"] = "Nina Surefire",
-["x"] = 10.8,
-["y"] = 72.5,
-["zone"] = Z["REDRIDGE_MOUNTAINS"]
 },
 [7948] = {
 ["faction"] = "Alliance",
@@ -645,17 +579,16 @@ module.Guide = {
 }
 },
 ["materialNames"] = {
+[13422] = "Stonescale Eel",
 [13423] = "Stonescale Oil",
-[13466] = "Plaguebloom",
 [13477] = "Recipe: Superior Mana Potion",
 [13478] = "Recipe: Elixir of Superior Defense",
-[18256] = "Imbued Vial",
 [2447] = "Peacebloom",
 [2449] = "Earthroot",
 [2450] = "Briarthorn",
-[250987] = "Recipe: Major Frenzy Potion",
 [3356] = "Kingsblood",
 [3357] = "Liferoot",
+[3358] = "Khadgar's Whisker",
 [3371] = "Empty Vial",
 [3372] = "Leaded Vial",
 [3820] = "Stranglekelp",
@@ -663,21 +596,20 @@ module.Guide = {
 [6371] = "Fire Oil",
 [765] = "Silverleaf",
 [785] = "Mageroyal",
-[8836] = "Arthas' Tears",
 [8838] = "Sungrass",
 [8839] = "Blindweed",
-[8845] = "Ghost Mushroom",
-[8925] = "Crystal Vial",
-[9301] = "Recipe: Elixir of Shadow Power"
+[8925] = "Crystal Vial"
 },
 ["materialSources"] = {
-[13423] = {
+[13422] = {
 ["kind"] = "auction",
-["note"] = "Obtain finished Stonescale Oil from an Alchemist or the Auction House. The shopping list counts finished oil; it does not assume a Stonescale Eel preparation route."
+["note"] = "Fish for Stonescale Eel or buy it from another player or the Auction House."
 },
-[13466] = {
-["kind"] = "auction",
-["note"] = "Gather Plaguebloom with Herbalism, trade with another player, or buy it at the Auction House. Confirm availability before committing to the untested Artisan chapter."
+[13423] = {
+["kind"] = "craft",
+["note"] = "Keep both Stonescale Oils from each craft for Elixir of Greater Defense.",
+["spellID"] = 17551,
+["stepID"] = "250-260"
 },
 [13477] = {
 ["kind"] = "supply",
@@ -686,9 +618,6 @@ module.Guide = {
 [13478] = {
 ["kind"] = "supply",
 ["note"] = "Buy this recipe from a listed vendor. Purchase it only if it is not already learned."
-},
-[18256] = {
-["kind"] = "supply"
 },
 [2447] = {
 ["kind"] = "herb",
@@ -720,10 +649,6 @@ Z["LOCH_MODAN"],
 Z["DARKSHORE"]
 }
 },
-[250987] = {
-["kind"] = "supply",
-["note"] = "Buy from your faction vendor: Honored reputation and 240 Merchant's Favor required. The recipe binds on pickup."
-},
 [3356] = {
 ["kind"] = "herb",
 ["skill"] = 125,
@@ -740,6 +665,14 @@ Z["STRANGLETHORN_VALE"]
 Z["WETLANDS"],
 Z["HILLSBRAD_FOOTHILLS"],
 Z["STRANGLETHORN_VALE"]
+}
+},
+[3358] = {
+["kind"] = "herb",
+["skill"] = 185,
+["zones"] = {
+Z["STRANGLETHORN_VALE"],
+Z["ARATHI_HIGHLANDS"]
 }
 },
 [3371] = {
@@ -792,10 +725,6 @@ Z["LOCH_MODAN"],
 Z["DARKSHORE"]
 }
 },
-[8836] = {
-["kind"] = "auction",
-["note"] = "Gather Arthas' Tears with Herbalism, trade with another player, or buy it at the Auction House. Confirm availability before committing to the untested Artisan chapter."
-},
 [8838] = {
 ["kind"] = "auction",
 ["note"] = "Gather Sungrass with Herbalism, trade with another player, or buy it at the Auction House. Confirm availability before committing to the untested Artisan chapter."
@@ -804,16 +733,8 @@ Z["DARKSHORE"]
 ["kind"] = "auction",
 ["note"] = "Gather Blindweed with Herbalism, trade with another player, or buy it at the Auction House. Confirm availability before committing to the untested Artisan chapter."
 },
-[8845] = {
-["kind"] = "auction",
-["note"] = "Gather Ghost Mushroom with Herbalism, trade with another player, or buy it at the Auction House. Confirm availability before committing to the untested Artisan chapter."
-},
 [8925] = {
 ["kind"] = "supply"
-},
-[9301] = {
-["kind"] = "supply",
-["note"] = "Buy this recipe from a listed vendor. Purchase it only if it is not already learned."
 }
 },
 ["maxSkill"] = 300,
@@ -825,24 +746,33 @@ Z["DARKSHORE"]
 
 },
 ["source"] = "https://www.wow-professions.com/forever/alchemy-leveling-guide",
-["sourceDate"] = "2026-10-21",
-["sourceHash"] = "c00488b17d8598b97d087ab3efafd8ee3c4b80425a6a204f2b436e036f1cec86",
+["sourceDate"] = "2026-11-14",
+["sourceHash"] = "189f9415104a6d0835dc9b8ba1498cfd06c2940be7014d1d17c658782fbcf431",
+["stepProgressMigrations"] = {
+["230-265"] = {
+"235-250",
+"250-260",
+"260-265"
+},
+["240-265"] = {
+"250-260",
+"260-265"
+}
+},
 ["supplies"] = {
 {
 ["faction"] = "Horde",
 ["id"] = "algernon",
 ["items"] = {
 [13477] = true,
-[18256] = true,
 [3371] = true,
 [3372] = true,
-[8925] = true,
-[9301] = true
+[8925] = true
 },
 ["mapID"] = 1458,
 ["name"] = "Algernon",
-["x"] = 51.7,
-["y"] = 74.7,
+["x"] = 52.1,
+["y"] = 74.5,
 ["zone"] = Z["UNDERCITY"]
 },
 {
@@ -850,7 +780,6 @@ Z["DARKSHORE"]
 ["id"] = "ulthir",
 ["items"] = {
 [13477] = true,
-[18256] = true,
 [3371] = true,
 [3372] = true,
 [8925] = true
@@ -866,15 +795,14 @@ Z["DARKSHORE"]
 ["id"] = "korgeld",
 ["items"] = {
 [13478] = true,
-[18256] = true,
 [3371] = true,
 [3372] = true,
 [8925] = true
 },
 ["mapID"] = 1454,
 ["name"] = "Kor'geld",
-["x"] = 56.3,
-["y"] = 34.3,
+["x"] = 55.8,
+["y"] = 34.1,
 ["zone"] = Z["ORGRIMMAR"]
 },
 {
@@ -882,7 +810,6 @@ Z["DARKSHORE"]
 ["id"] = "soolie-berryfizz",
 ["items"] = {
 [13478] = true,
-[18256] = true,
 [3371] = true,
 [3372] = true,
 [8925] = true
@@ -894,26 +821,9 @@ Z["DARKSHORE"]
 ["zone"] = Z["IRONFORGE"]
 },
 {
-["faction"] = "Alliance",
-["id"] = "maria-lumere",
-["items"] = {
-[18256] = true,
-[3371] = true,
-[3372] = true,
-[8925] = true,
-[9301] = true
-},
-["mapID"] = 1453,
-["name"] = "Maria Lumere",
-["x"] = 55.6,
-["y"] = 85.6,
-["zone"] = Z["STORMWIND_CITY"]
-},
-{
 ["faction"] = "Horde",
 ["id"] = "mani-winterhoof",
 ["items"] = {
-[18256] = true,
 [3371] = true,
 [3372] = true,
 [8925] = true
@@ -935,30 +845,6 @@ Z["DARKSHORE"]
 ["x"] = 55.3,
 ["y"] = 57.1,
 ["zone"] = Z["TELDRASSIL"]
-},
-{
-["faction"] = "Horde",
-["id"] = "apothecary-durelle",
-["items"] = {
-[250987] = true
-},
-["mapID"] = 1413,
-["name"] = "Apothecary Durelle",
-["x"] = 49.9,
-["y"] = 29.6,
-["zone"] = Z["THE_BARRENS"]
-},
-{
-["faction"] = "Alliance",
-["id"] = "nina-surefire",
-["items"] = {
-[250987] = true
-},
-["mapID"] = 1433,
-["name"] = "Nina Surefire",
-["x"] = 10.8,
-["y"] = 72.5,
-["zone"] = Z["REDRIDGE_MOUNTAINS"]
 }
 },
 ["title"] = "Alchemy Guide",

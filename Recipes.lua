@@ -50,6 +50,175 @@ function module:InitializeRecipes()
     -- Forever
     -------------------------------------------------------------------------------
 
+    -- Potion of Beast Slaying -- 1251753
+    recipe = AddRecipe(1251753, Q.COMMON)
+    recipe:SetSkillLevels(280, 280, 285, 287, 290)
+    recipe:SetRecipeItem(250999, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250955, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddVendor(1313, 4610)
+    recipe:AddQuest(89013, 91608)
+
+    -- Minor Magic Resistance Potion -- 3172
+    recipe = AddRecipe(3172, Q.COMMON)
+    recipe:SetSkillLevels(110, 110, 135, 155, 175)
+    recipe:SetRecipeItem(3393, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(3384, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_HALL_OF_THANES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+
+    -- Magic Resistance Potion -- 11453
+    recipe = AddRecipe(11453, Q.UNCOMMON)
+    recipe:SetSkillLevels(210, 210, 225, 245, 265)
+    recipe:SetRecipeItem(9293, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(9036, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+
+    -- Minor Cleric's Elixir -- 1250779
+    recipe = AddRecipe(1250779, Q.COMMON)
+    recipe:SetSkillLevels(45, 45, 50, 52, 55)
+    recipe:SetRecipeItem(250366, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250330, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_ELIXIR")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddWorldDrop(Z.DUSKWOOD, Z.ELWYNN_FOREST, Z.TIRISFAL_GLADES)
+    recipe:AddMobDrop(46, 1545, 250283, 276180)
+
+    -- Cleric's Elixir -- 1250781
+    recipe = AddRecipe(1250781, Q.COMMON)
+    recipe:SetSkillLevels(145, 145, 150, 152, 155)
+    recipe:SetRecipeItem(250368, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250332, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_ELIXIR")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(3757)
+
+    -- Minor Mageblood Elixir -- 1250788
+    recipe = AddRecipe(1250788, Q.COMMON)
+    recipe:SetSkillLevels(25, 25, 30, 32, 35)
+    recipe:SetRecipeItem(250375, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250339, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_ELIXIR")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(1134, 2975)
+
+    -- Elixir of Minor Spirit -- 1250793
+    recipe = AddRecipe(1250793, Q.COMMON)
+    recipe:SetSkillLevels(15, 15, 20, 22, 25)
+    recipe:SetRecipeItem(250380, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250344, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_ELIXIR")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(2007, 3128)
+
+    -- Elixir of Spirit -- 1250795
+    recipe = AddRecipe(1250795, Q.COMMON)
+    recipe:SetSkillLevels(115, 115, 120, 122, 125)
+    recipe:SetRecipeItem(250382, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250346, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_ELIXIR")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(4022)
+
+    -- Elixir of Intellect -- 1250802
+    recipe = AddRecipe(1250802, Q.COMMON)
+    recipe:SetSkillLevels(135, 135, 140, 142, 145)
+    recipe:SetRecipeItem(250389, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250354, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_ELIXIR")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(4095)
+
+    -- Minor Spellblasting Potion -- 1251729
+    recipe = AddRecipe(1251729, Q.COMMON)
+    recipe:SetSkillLevels(35, 35, 40, 42, 45)
+    recipe:SetRecipeItem(250976, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250932, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(476, 3115)
+
+    -- Lesser Spellblasting Potion -- 1251730
+    recipe = AddRecipe(1251730, Q.COMMON)
+    recipe:SetSkillLevels(85, 85, 90, 92, 95)
+    recipe:SetRecipeItem(250977, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250933, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(2169, 3280)
+
+    -- Greater Spellblasting Potion -- 1251732
+    recipe = AddRecipe(1251732, Q.UNCOMMON)
+    recipe:SetSkillLevels(185, 185, 190, 192, 195)
+    recipe:SetRecipeItem(250979, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250935, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddRepVendor(FAC.MAGRAM_CLAN_CENTAUR, REP.HONORED, 253139)
+    recipe:AddRepVendor(FAC.GELKIS_CLAN_CENTAUR, REP.EXALTED, 253140)
+    recipe:AddQuest(92754)
+
+    -- Minor Frenzy Potion -- 1251735
+    recipe = AddRecipe(1251735, Q.COMMON)
+    recipe:SetSkillLevels(40, 40, 45, 47, 50)
+    recipe:SetRecipeItem(250982, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250938, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddWorldDrop(Z.MULGORE, Z.TELDRASSIL)
+
+    -- Lesser Frenzy Potion -- 1251736
+    recipe = AddRecipe(1251736, Q.COMMON)
+    recipe:SetSkillLevels(90, 90, 95, 97, 100)
+    recipe:SetRecipeItem(250983, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250939, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(1943)
+
+    -- Greater Frenzy Potion -- 1251738
+    recipe = AddRecipe(1251738, Q.UNCOMMON)
+    recipe:SetSkillLevels(190, 190, 195, 197, 200)
+    recipe:SetRecipeItem(250985, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250941, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddRepVendor(FAC.MAGRAM_CLAN_CENTAUR, REP.HONORED, 253139)
+    recipe:AddRepVendor(FAC.GELKIS_CLAN_CENTAUR, REP.EXALTED, 253140)
+    recipe:AddQuest(92754)
+
+    -- Minor Mender's Potion -- 1251741
+    recipe = AddRecipe(1251741, Q.COMMON)
+    recipe:SetSkillLevels(30, 30, 35, 37, 40)
+    recipe:SetRecipeItem(250988, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250944, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(1934, 7235)
+
+    -- Lesser Mender's Potion -- 1251742
+    recipe = AddRecipe(1251742, Q.COMMON)
+    recipe:SetSkillLevels(80, 80, 85, 87, 90)
+    recipe:SetRecipeItem(250989, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250945, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(2180, 3386)
+
+    -- Greater Mender's Potion -- 1251744
+    recipe = AddRecipe(1251744, Q.COMMON)
+    recipe:SetSkillLevels(180, 180, 185, 187, 190)
+    recipe:SetRecipeItem(250991, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(250947, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddQuest(2203, 2501)
+
+
     -- Flask of the Titans -- 17635
     recipe = AddRecipe(17635, Q.UNCOMMON)
     recipe:SetSkillLevels(300, 300, 315, 322, 330)
@@ -156,6 +325,24 @@ function module:InitializeRecipes()
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddTrainer(1386, 4160, 4611, 7948, 246795, 259585, 275322)
 
+    -- Alchemist's Stone -- 17632
+    recipe = AddRecipe(17632, Q.COMMON)
+    recipe:SetSkillLevels(275, 275, 315, 322, 330)
+    recipe:SetRecipeItem(13517, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(13503, "BIND_ON_PICKUP")
+    recipe:SetItemFilterType("ALCHEMY_TRINKET")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
+    recipe:AddVendor(256629)
+
+    -- Distilled Firewater -- 1244421
+    recipe = AddRecipe(1244421, Q.COMMON)
+    recipe:SetSkillLevels(250, 250, 260, 265, 270)
+    recipe:SetRecipeItem(236754, "BIND_ON_PICKUP")
+    recipe:SetCraftedItem(246948, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_ELIXIR")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddQuest(86927)
+
 
     -- WORK IN PROGRESS
     -- Elixir of Minor Force -- 1245250
@@ -176,7 +363,7 @@ function module:InitializeRecipes()
 
     -- Mana Well -- 1230564
     recipe = AddRecipe(1230564, Q.COMMON)
-    recipe:SetSkillLevels(20, 20, 20, 22, 25)
+    recipe:SetSkillLevels(20, 20, 20, 20, 20)
     recipe:SetCraftedItem(279956, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_MISC")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
@@ -495,8 +682,8 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(250953, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.HONORED, 248196)
-    recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.HONORED, 256729)
+    recipe:AddRepVendor(FAC.DUROTAR_SUPPLY_AND_LOGISTICS, REP.FRIENDLY, 248196)
+    recipe:AddRepVendor(FAC.AZEROTH_COMMERCE_AUTHORITY, REP.FRIENDLY, 256729)
     recipe:AddMerchantFavor(120)
 
     -- Potion of Elemental Purging -- 1251752
@@ -553,7 +740,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3390, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Elixir of Minor Fortitude -- 2334
     recipe = AddRecipe(2334, Q.COMMON)
@@ -587,7 +774,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3383, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.HEALER)
-    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322)
+    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322, 1215, 1246, 1470, 2132, 3184, 3603, 5500, 11041, 11044, 11046, 11047)
 
     -- Lesser Mana Potion -- 3173
     recipe = AddRecipe(3173, Q.COMMON)
@@ -595,7 +782,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3385, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.HEALER)
-    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322)
+    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322, 1215, 1246, 1470, 2132, 3184, 3603, 5500, 11041, 11044, 11046, 11047)
 
     -- Potion of Curing -- 3174
     recipe = AddRecipe(3174, Q.COMMON)
@@ -613,7 +800,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3387, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RUINS_OF_AHNQIRAJ, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_MONASTERY, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Strong Troll's Blood Elixir -- 3176
     recipe = AddRecipe(3176, Q.COMMON)
@@ -621,7 +808,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3388, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322)
+    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322, 1215, 1246, 1470, 2132, 3184, 3603, 5500, 11041, 11044, 11046, 11047)
 
     -- Elixir of Defense -- 3177
     recipe = AddRecipe(3177, Q.COMMON)
@@ -629,7 +816,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3389, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.TANK)
-    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322)
+    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322, 1215, 1246, 1470, 2132, 3184, 3603, 5500, 11041, 11044, 11046, 11047)
 
     -- Elixir of Ogre's Strength -- 3188
     recipe = AddRecipe(3188, Q.COMMON)
@@ -638,7 +825,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3391, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAGEFIRE_CHASM, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.RUINS_OF_LORDAERON, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_DEADMINES, Z.THE_STOCKADE, Z.WAILING_CAVERNS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Elixir of Minor Agility -- 3230
     recipe = AddRecipe(3230, Q.UNCOMMON)
@@ -665,10 +852,11 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3824, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_OIL")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddLimitedVendor(2481, 1, 4878, 1, 12245, 1)
+    recipe:AddLimitedVendor(2481, 1, 4878, 1)
+    recipe:AddVendor(12245)
     --recipe:AddTrainer(1386, 2132, 3009, 3184, 3347, 4160, 4900, 5177, 5499, 16588, 16642, 16723, 18802, 56777)
 
-    -- Elixir of Fortitude -- 3450
+    -- Elixir of Lesser Fortitude -- 3450
     recipe = AddRecipe(3450, Q.COMMON)
     recipe:SetSkillLevels(175, 175, 195, 215, 235)
     recipe:SetRecipeItem(3830, "BIND_ON_EQUIP")
@@ -676,7 +864,7 @@ function module:InitializeRecipes()
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
     recipe:AddTrainer(1386, 4160, 4611, 7948, 246795, 259585, 275322)
-    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_STOCKADE, Z.ULDAMAN, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.SHADOWFANG_KEEP, Z.THE_STOCKADE, Z.ULDAMAN, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Major Troll's Blood Elixir -- 3451
     recipe = AddRecipe(3451, Q.UNCOMMON)
@@ -685,7 +873,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3826, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.ULDAMAN, Z.ZULFARRAK, Z.BLACKFATHOM_DEEPS, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Mana Potion -- 3452
     recipe = AddRecipe(3452, Q.COMMON)
@@ -702,7 +890,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3828, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKFATHOM_DEEPS, Z.EXCAVATION_SITE_WETLANDS, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RAZORFEN_KRAUL, Z.SCARLET_MONASTERY, Z.THE_STOCKADE, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Frost Oil -- 3454
     recipe = AddRecipe(3454, Q.UNCOMMON)
@@ -711,7 +899,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(3829, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_OIL")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddLimitedVendor(2480, 1)
+    recipe:AddVendor(2480)
 
     -- Discolored Healing Potion -- 4508
     recipe = AddRecipe(4508, Q.UNCOMMON)
@@ -748,7 +936,8 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(5633, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.TANK, F.DRUID, F.WARRIOR)
-    recipe:AddLimitedVendor(3335, 2, 4226, 2, 12245, 1)
+    recipe:AddLimitedVendor(3335, 1, 4226, 2)
+    recipe:AddVendor(12245)
 
     -- Free Action Potion -- 6624
     recipe = AddRecipe(6624, Q.COMMON)
@@ -757,7 +946,8 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(5634, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddLimitedVendor(3348, 1, 4226, 1, 5178, 1, 12245, 1)
+    recipe:AddLimitedVendor(3348, 1, 4226, 1, 5178, 1)
+    recipe:AddVendor(12245)
 
     -- Elixir of Water Breathing -- 7179
     recipe = AddRecipe(7179, Q.COMMON)
@@ -765,7 +955,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(5996, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322)
+    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322, 1215, 1246, 1470, 2132, 3184, 3603, 5500, 11041, 11044, 11046, 11047)
 
 
     -- Holy Protection Potion -- 7255
@@ -803,7 +993,8 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(6050, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddLimitedVendor(2812, 1, 2848, 1)
+    recipe:AddLimitedVendor(2812, 1)
+    recipe:AddVendor(2848)
 
     -- Nature Protection Potion -- 7259
     recipe = AddRecipe(7259, Q.COMMON)
@@ -812,7 +1003,8 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(6052, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddLimitedVendor(2848, 1, 5594, 1, 8157, 1, 8158, 1)
+    recipe:AddLimitedVendor(5594, 1, 8157, 1, 8158, 1)
+    recipe:AddVendor(2848)
 
     -- Blackmouth Oil -- 7836
     recipe = AddRecipe(7836, Q.COMMON)
@@ -820,7 +1012,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(6370, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_OIL")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322)
+    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322, 1215, 1246, 1470, 2132, 3184, 3603, 5500, 11041, 11044, 11046, 11047)
 
     -- Fire Oil -- 7837
     recipe = AddRecipe(7837, Q.COMMON)
@@ -828,7 +1020,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(6371, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_OIL")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322)
+    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322, 1215, 1246, 1470, 2132, 3184, 3603, 5500, 11041, 11044, 11046, 11047)
 
     -- Swim Speed Potion -- 7841
     recipe = AddRecipe(7841, Q.COMMON)
@@ -836,7 +1028,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(6372, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322)
+    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322, 1215, 1246, 1470, 2132, 3184, 3603, 5500, 11041, 11044, 11046, 11047)
 
     -- Elixir of Firepower -- 7845
     recipe = AddRecipe(7845, Q.COMMON)
@@ -844,7 +1036,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(6373, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.HEALER)
-    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322)
+    recipe:AddTrainer(1386, 2391, 2837, 3009, 3347, 3964, 4160, 4609, 4611, 4900, 5177, 5499, 7948, 11042, 246795, 259585, 275322, 1215, 1246, 1470, 2132, 3184, 3603, 5500, 11041, 11044, 11046, 11047)
 
     -- Elixir of Giant Growth -- 8240
     recipe = AddRecipe(8240, Q.UNCOMMON)
@@ -916,7 +1108,7 @@ function module:InitializeRecipes()
     -- Philosopher's Stone -- 11459
     recipe = AddRecipe(11459, Q.COMMON)
     recipe:SetSkillLevels(225, 225, 240, 260, 280)
-    recipe:SetRecipeItem(9303, "BIND_ON_EQUIP")
+    recipe:SetRecipeItem(9303, "BIND_ON_PICKUP")
     recipe:SetCraftedItem(9149, "BIND_ON_PICKUP")
     recipe:SetItemFilterType("ALCHEMY_TRINKET")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
@@ -945,7 +1137,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(9172, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_MONASTERY, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_MONASTERY, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Elixir of Greater Intellect -- 11465
     recipe = AddRecipe(11465, Q.COMMON)
@@ -988,7 +1180,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(9206, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.SCARLET_MONASTERY, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.DIRE_MAUL, Z.GNOMEREGAN, Z.MARAUDON, Z.RAZORFEN_DOWNS, Z.RUINS_OF_AHNQIRAJ, Z.SCARLET_MONASTERY, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Ghost Dye -- 11473
     recipe = AddRecipe(11473, Q.COMMON)
@@ -1094,7 +1286,8 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(13443, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddLimitedVendor(4226, 1, 4610, 1)
+    recipe:AddLimitedVendor(4226, 1)
+    recipe:AddVendor(4610)
 
     -- Elixir of Superior Defense -- 17554
     recipe = AddRecipe(17554, Q.COMMON)
@@ -1175,7 +1368,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(12808, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_TRANSMUTE")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.STORM_CLIFFS, Z.THE_TAINTED_SCAR, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ULDAMAN, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Transmute: Life to Earth -- 17565
     recipe = AddRecipe(17565, Q.UNCOMMON)
@@ -1193,7 +1386,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(12803, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_TRANSMUTE")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.SCARLET_MONASTERY, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.ZULGURUB, Z.MARAUDON, Z.ZULFARRAK, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Greater Stoneshield Potion -- 17570
     recipe = AddRecipe(17570, Q.UNCOMMON)
@@ -1202,7 +1395,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(13455, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_POTION")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.TANK)
-    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
+    recipe:AddWorldDrop(Z.AHNQIRAJ, Z.BLACKROCK_DEPTHS, Z.BLACKROCK_SPIRE, Z.BLACKWING_LAIR, Z.DEMON_FALL_CANYON, Z.DIRE_MAUL, Z.KARAZHAN_CRYPTS, Z.MOLTEN_CORE, Z.NAXXRAMAS, Z.RUINS_OF_AHNQIRAJ, Z.SCHOLOMANCE, Z.STORM_CLIFFS, Z.STRATHOLME, Z.THE_TAINTED_SCAR, Z.THE_TEMPLE_OF_ATALHAKKAR, Z.ZULFARRAK, Z.ZULGURUB, Z.MARAUDON, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
     -- Elixir of the Mongoose -- 17571
     recipe = AddRecipe(17571, Q.UNCOMMON)
@@ -1211,7 +1404,7 @@ function module:InitializeRecipes()
     recipe:SetCraftedItem(13452, "BIND_ON_EQUIP")
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.DPS, F.HEALER)
-    recipe:AddMobDrop(6201, 7106)
+    recipe:AddMobDrop(6201, 7106, 236876)
 
     -- Purification Potion -- 17572
     recipe = AddRecipe(17572, Q.COMMON)
@@ -1382,6 +1575,88 @@ function module:InitializeRecipes()
     recipe:SetItemFilterType("ALCHEMY_ELIXIR")
     recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CASTER, F.HEALER)
     recipe:AddWorldDrop(Z.SEARING_GORGE)
+
+    -- Fermenter -- 1263005
+    recipe = AddRecipe(1263005, Q.UNCOMMON)
+    recipe:SetSkillLevels(140, 140, 140, 140, 140)
+    recipe:SetRecipeItem(273085, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(279970, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_MISC")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(250657)
+    recipe:AddVendor(277945)
+
+    -- Elixir of Fortitude -- 1250783
+    recipe = AddRecipe(1250783, Q.COMMON)
+    recipe:SetSkillLevels(150, 150, 155, 157, 160)
+    recipe:SetRecipeItem(250370, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250334, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_ELIXIR")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(4632)
+
+    -- Elixir of Strength -- 1250798
+    recipe = AddRecipe(1250798, Q.COMMON)
+    recipe:SetSkillLevels(150, 150, 155, 157, 160)
+    recipe:SetRecipeItem(250385, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250349, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_ELIXIR")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(3931)
+
+    -- Potion of Predatory Senses -- 1250776
+    recipe = AddRecipe(1250776, Q.COMMON)
+    recipe:SetSkillLevels(195, 195, 200, 202, 205)
+    recipe:SetRecipeItem(250363, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250327, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(4684)
+
+    -- Superior Mender's Potion -- 1251745
+    recipe = AddRecipe(1251745, Q.COMMON)
+    recipe:SetSkillLevels(230, 230, 235, 237, 240)
+    recipe:SetRecipeItem(250992, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250948, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(2640)
+
+    -- Superior Spellblasting Potion -- 1251733
+    recipe = AddRecipe(1251733, Q.COMMON)
+    recipe:SetSkillLevels(235, 235, 240, 242, 245)
+    recipe:SetRecipeItem(250980, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250936, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(6193)
+
+    -- Superior Frenzy Potion -- 1251739
+    recipe = AddRecipe(1251739, Q.COMMON)
+    recipe:SetSkillLevels(240, 240, 245, 247, 250)
+    recipe:SetRecipeItem(250986, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(250942, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_POTION")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(5363)
+
+    -- Transmute: Legionite -- 1317279
+    recipe = AddRecipe(1317279, Q.COMMON)
+    recipe:SetSkillLevels(275, 275, 275, 282, 290)
+    recipe:SetRecipeItem(284871, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(251290, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_TRANSMUTE")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(249229)
+
+    -- Alchemy Laboratory -- 1263078
+    recipe = AddRecipe(1263078, Q.UNCOMMON)
+    recipe:SetSkillLevels(300, 300, 300, 300, 300)
+    recipe:SetRecipeItem(273112, "BIND_ON_EQUIP")
+    recipe:SetCraftedItem(279990, "BIND_ON_EQUIP")
+    recipe:SetItemFilterType("ALCHEMY_MISC")
+    recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddMobDrop(10508)
 
     self.InitializeRecipes = nil
 end
